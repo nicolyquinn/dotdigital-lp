@@ -1,0 +1,147 @@
+.container{
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 0;
+    background-color: rgb(48, 48, 48);
+
+    @media screen and (max-width: 400px) {
+        height: auto;
+      }
+
+    #two:checked ~ .main-card{
+        margin-left: -100%;
+      }
+
+    #three:checked ~ .main-card{
+        margin-left: -200%;
+    }
+
+    #one:checked ~ .button .one{
+        width: 35px;
+    }
+    #one:checked ~ .button .two{
+        width: 15px;
+    }
+    #two:checked ~ .button .one{
+        width: 15px;
+    }
+    #two:checked ~ .button .two{
+        width: 35px;
+    }
+    #three:checked ~ .button .one{
+        width: 15px;
+    }
+    #three:checked ~ .button .two{
+        width: 15px;
+    }
+    #three:checked ~ .button .three{
+        width: 35px;
+    }
+
+    input[type="radio"]{
+        display: none;
+    }
+
+    .main-card{
+        display: flex;
+        justify-content: space-around;
+        width: 300%;
+        transition: 1s;
+
+        @media screen and (max-width: 400px) {
+            width: 900%;
+          }
+
+        
+
+        .cards{
+            width: calc(100% / 2 - 10px);
+            display: flex;
+            justify-content: space-around;
+
+            @media screen and (max-width: 400px) {
+                width: calc(100% / 2 - 10px);
+              }
+
+            .card{
+                width: calc(80% / 3 - 10px);
+                background: transparent;
+                border-radius: 12px;
+                padding: 30px 20px;
+                margin-right: 30px;
+                transition: all 0.4s ease;
+
+                &:hover{
+                    transform: translateY(-15px);
+                }
+
+                @media screen and (max-width: 400px) {
+                    width: calc(80% / 1 - 10px);
+                  }
+
+                .content{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+
+                    .img{
+                        height: auto;
+                        width: 90%;
+                        margin-bottom: 15px;
+
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            border: 6px solid rgb(116, 116, 116);
+                            object-fit: cover;
+                        }
+                    }
+
+                    .name{
+                        font-size: 25px;
+                        font-weight: 800;
+                        color: white;
+                        margin-bottom: 5px;
+                    }
+
+                    .job{
+                        font-size: 16px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .button{
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+
+        label{
+            height: 15px;
+            width: 15px;
+            border-radius: 20px;
+            background: #fff;
+            margin: 0 4px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+
+            
+        }
+
+        label.active{
+            width: 35px;
+          }
+
+          
+
+    }
+
+}
+ 

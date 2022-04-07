@@ -1,0 +1,170 @@
+.formsContainer{
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(162deg, gray 50%, rgb(31, 31, 31) 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 400px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        padding: 10px 0px 10px 0px;
+      }
+
+    .formItems{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+
+        @media screen and (max-width: 400px) {
+            margin: 20px;
+          }
+
+        input{
+            width: 100%;
+            padding: 5px;
+            border: none;
+        }
+
+        .name{
+            display: flex;
+            width: 100%;
+            background-color: lightgray;
+            padding: 10px 30px;
+            border-radius: 10px;
+
+            h1{
+                font-size: 20px;
+                flex: 1;
+                text-align: right;
+            }
+
+            input{
+                background-color: transparent;
+                
+            }
+
+            @media screen and (max-width: 400px) {
+                width: 100%;
+                padding: 5px;
+              }
+        
+        }
+        .emailnumber{
+            display: flex;
+            width: 100%;
+            gap: 15px;
+
+            @media screen and (max-width: 400px) {
+                flex-direction: column;
+              }
+
+            .email{
+                display: flex;
+                width: 50%;
+                background-color: lightgray;
+                padding: 10px 0px;
+                border-radius: 10px;
+                align-items: center;
+
+                @media screen and (max-width: 400px) {
+                    width: 100%;
+                    padding: 5px;
+                  }
+
+                h1{
+                    font-size: 20px;
+                    flex: 1;
+                    text-align: right;
+                }
+
+                input{
+                    background-color: transparent;
+                    flex: 5;
+   
+                }
+                
+            }
+
+            .number{
+                display: flex;
+                width: 50%;
+                background-color: lightgray;
+                padding: 0px 10px;
+                border-radius: 10px;
+                align-items: center;
+
+                h1{
+                    font-size: 20px;
+                    flex: 1;
+                    text-align: right;
+                }
+
+                input{
+                    background-color: transparent;
+                    flex: 5;
+                }
+
+                @media screen and (max-width: 400px) {
+                    width: 100%;
+                    padding: 5px 5px 5px 20px;
+                  }
+            }
+
+            
+        }
+
+        .message{
+            display: flex;
+            width: 100%;
+            background-color: lightgray;
+            padding: 10px 30px 90px;
+            border-radius: 10px;
+
+            h1{
+                font-size: 20px;
+                flex: 1;
+                text-align: right;
+            }
+
+            input{
+                background-color: transparent;
+                
+            }
+
+            @media screen and (max-width: 400px) {
+                width: 100%;
+                padding: 5px 5px 70px 20px;
+              }
+        }
+
+        ::placeholder{
+            font-size: 20px;
+            
+        }
+    }
+
+    .button{
+        width: 150px;
+        padding: 20px;
+        border: none;
+        background-color: white;
+        color: rgb(53, 53, 53);
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 600;
+
+        &:hover{
+            background-color: rgb(102, 102, 102); 
+            color: white;
+        }
+    }
+}

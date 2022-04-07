@@ -1,0 +1,80 @@
+.simpleContainer{
+    width: 100%;
+    display: flex;
+    background-color: gray;
+
+    @media screen and (max-width: 400px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+    .left{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px 20px 0px;
+        margin-right: -50px;
+
+        @media screen and (max-width: 400px) {
+            margin-right: 0px;
+          }
+
+        .img{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            border: 18px solid rgb(44, 44, 44);
+
+            @media screen and (max-width: 400px) {
+                width: 300px;
+                height: 300px;
+              }
+        }
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 20px 50px 20px 0px;
+        align-items: flex-start;
+        justify-content: center;
+
+        @media screen and (max-width: 400px) {
+            align-items: center;
+            text-align: center;
+            padding: 15px 15px 15px 15px;
+          }
+
+        .simpleTitle{
+            color: white;
+            font-size: 45px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    
+        .simpleDesc{
+            color: white;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .simpleDesc2{
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .simpleDesc3{
+            color: white;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .simpleDesc4{
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+}
